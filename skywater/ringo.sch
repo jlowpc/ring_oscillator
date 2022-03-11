@@ -38,22 +38,18 @@ N 1550 -100 1550 -40 {
 lab=FB}
 N 90 -20 120 -20 {
 lab=EN}
-N 90 -200 210 -200 {
-lab=VPWR}
-N 90 -230 270 -230 {
-lab=VPB}
-C {sky130_stdcells/nand2_1.sym} 180 -40 0 0 {name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 330 -40 0 0 {name=x2 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 460 -40 0 0 {name=x3 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 590 -40 0 0 {name=x4 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 720 -40 0 0 {name=x5 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 850 -40 0 0 {name=x6 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 980 -40 0 0 {name=x7 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 1110 -40 0 0 {name=x8 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 1240 -40 0 0 {name=x9 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 1370 -40 0 0 {name=x10 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 1500 -40 0 0 {name=x11 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 1630 -40 0 0 {name=x12 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/nand2_1.sym} 180 -40 0 0 {name=x1 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__}
+C {sky130_stdcells/inv_1.sym} 330 -40 0 0 {name=x2 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__}
+C {sky130_stdcells/inv_1.sym} 460 -40 0 0 {name=x3 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__}
+C {sky130_stdcells/inv_1.sym} 590 -40 0 0 {name=x4 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__}
+C {sky130_stdcells/inv_1.sym} 720 -40 0 0 {name=x5 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__ }
+C {sky130_stdcells/inv_1.sym} 850 -40 0 0 {name=x6 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__ }
+C {sky130_stdcells/inv_1.sym} 980 -40 0 0 {name=x7 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__}
+C {sky130_stdcells/inv_1.sym} 1110 -40 0 0 {name=x8 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__}
+C {sky130_stdcells/inv_1.sym} 1240 -40 0 0 {name=x9 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__}
+C {sky130_stdcells/inv_1.sym} 1370 -40 0 0 {name=x10 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__}
+C {sky130_stdcells/inv_1.sym} 1500 -40 0 0 {name=x11 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__}
+C {sky130_stdcells/inv_1.sym} 1630 -40 0 0 {name=x12 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hvl__}
 C {devices/lab_wire.sym} 270 -40 0 0 {name=l1 sig_type=std_logic lab=1}
 C {devices/lab_wire.sym} 400 -40 0 0 {name=l2 sig_type=std_logic lab=2}
 C {devices/lab_wire.sym} 530 -40 0 0 {name=l3 sig_type=std_logic lab=3}
@@ -68,8 +64,8 @@ C {devices/lab_wire.sym} 1580 -40 0 0 {name=l11 sig_type=std_logic lab=FB}
 C {devices/ipin.sym} 90 -20 0 0 {name=p1 lab=EN}
 C {devices/opin.sym} 1730 -40 0 0 {name=p2 lab=OUT}
 C {devices/code_shown.sym} 810 -370 0 0 {name=SPICE only_toplevel=true place=header value="
-VVGND VGND 0 dc 0
-VVNB VNB 0 dc 0
+VVDD VDD 0 1.8
+VVSS VSS 0 0
 VPULSE EN 0 dc 0 PULSE (0 1.8v 5n 2n 2n 1 1)
 .TRAN 0.1n 100ns
 .PRINT TRAN V(EN)
@@ -78,16 +74,8 @@ C {devices/code.sym} 670 -370 0 0 {name=TT_MODELS place=header
 only_toplevel=true
 format="tcleval( @value )"
 value="
-.lib $::SKYWATER_MODELS/models/sky130.lib.spice tt 
-.include \\\\$::SKYWATER_STDCELLS\\\\/cells/inv/sky130_fd_sc_hd__inv_1.spice
-.include \\\\$::SKYWATER_STDCELLS\\\\/cells/nand2/sky130_fd_sc_hd__nand2_1.spice
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt 
+.include \\\\$::SKYWATER_STDCELLS/sky130_fd_sc_hvl.spice
 "}
-C {devices/vsource.sym} 270 -200 0 1 {name=VVPB value=1.8}
-C {devices/lab_wire.sym} 270 -170 0 0 {name=l13 sig_type=std_logic lab=0}
-C {devices/vsource.sym} 210 -170 0 1 {name=VVPWR value=1.8}
-C {devices/lab_wire.sym} 140 -200 0 1 {name=l14 sig_type=std_logic lab=VPWR}
-C {devices/lab_wire.sym} 210 -140 0 0 {name=l15 sig_type=std_logic lab=0}
-C {devices/ipin.sym} 90 -230 0 0 {name=p3 lab=VPB}
-C {devices/ipin.sym} 90 -200 0 0 {name=p4 lab=VPWR}
-C {devices/ipin.sym} 90 -170 0 0 {name=p5 lab=VGND}
-C {devices/ipin.sym} 90 -140 0 0 {name=p6 lab=VNB}
+C {devices/ipin.sym} 90 -230 0 0 {name=p3 lab=VDD}
+C {devices/ipin.sym} 90 -200 0 0 {name=p5 lab=VSS}
