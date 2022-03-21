@@ -1,1 +1,1 @@
-./run_magic.sh ../ringo.gds ringo ../ringo.spice
+./run_magic_netgen.sh ../ringo.gds ringo ../ringo.spice
