@@ -1,0 +1,30 @@
+** sch_path: /media/sf_shared/ring_oscillator/skywater/ringo_hd.sch
+
+
+VVDD VDD 0 1.8
+VVSS VSS 0 0
+VPULSE EN 0 dc 0 PULSE (0 1.8v 5n 2n 2n 1 1)
+.TRAN 0.1n 100ns
+.PRINT TRAN V(EN)
+
+
+
+* .lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+.subckt ringo_hd EN OUT VDD VSS
+*.PININFO EN:I OUT:O VDD:I VSS:I
+x1 FB EN VSS VSS VDD VDD 1 sky130_fd_sc_hd__nand2_1
+x2 1 VSS VSS VDD VDD 2 sky130_fd_sc_hd__inv_1
+x3 2 VSS VSS VDD VDD 3 sky130_fd_sc_hd__inv_1
+x4 3 VSS VSS VDD VDD 4 sky130_fd_sc_hd__inv_1
+x5 4 VSS VSS VDD VDD 5 sky130_fd_sc_hd__inv_1
+x6 5 VSS VSS VDD VDD 6 sky130_fd_sc_hd__inv_1
+x7 6 VSS VSS VDD VDD 7 sky130_fd_sc_hd__inv_1
+x8 7 VSS VSS VDD VDD 8 sky130_fd_sc_hd__inv_1
+x9 8 VSS VSS VDD VDD 9 sky130_fd_sc_hd__inv_1
+x10 9 VSS VSS VDD VDD 10 sky130_fd_sc_hd__inv_1
+x11 10 VSS VSS VDD VDD FB sky130_fd_sc_hd__inv_1
+x12 FB VSS VSS VDD VDD OUT sky130_fd_sc_hd__inv_1
+.ends
+.end
